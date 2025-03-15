@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Synthesizer with Ring Modulation</title>
+</head>
+<body>
+    <h2>Web Synthesizer</h2>
+    <label for="waveform">Waveform:</label>
+    <select id="waveform">
+        <option value="sine">Sine</option>
+        <option value="square">Square</option>
+        <option value="sawtooth">Sawtooth</option>
+        <option value="triangle">Triangle</option>
+    </select>
+    <br>
+    <label for="modFreq">Modulation Frequency:</label>
+    <input type="range" id="modFreq" min="1" max="1000" value="200">
+    <span id="modFreqVal">200</span> Hz
+    <br>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
